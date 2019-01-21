@@ -1,0 +1,11 @@
+import {  Routes } from '@angular/router';
+import { UsuarioNuevoComponent } from './usuario-nuevo.component';
+import { UsuarioDetalleComponent } from './usuario-detalle.component';
+import { UsuarioEditarComponent } from './usuario-editar.component';
+
+export const USUARIOS_ROUTES: Routes = [
+  { path: 'nuevo', component: UsuarioNuevoComponent },
+  { path: 'editar', component: UsuarioDetalleComponent },
+  { path: 'detalle', component: UsuarioEditarComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'nuevo' }
+];
