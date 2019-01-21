@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-usuario-editar',
-  template: ""
+  template: "<h2>Editar Usuario<h2>"
 })
 export class UsuarioEditarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log("editar");
+  }
 
   ngOnInit() {
   }
